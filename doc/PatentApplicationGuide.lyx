@@ -13950,6 +13950,21 @@ An Independent claim.
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+
+\backslash
+dependentClaimsStart
+\end_layout
+
+\begin_layout Plain Layout
 
 \family typewriter
 
@@ -13963,6 +13978,21 @@ beginClaim{ADepClaim}
 A dependent claim of 
 \backslash
 claimRef{AnIndepClaim}.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+
+\backslash
+dependentClaimsEnd
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -14088,12 +14118,63 @@ claimRef macro
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
-LaTeX!macro!
+\SpecialChar LaTeX
+!macro!
 \backslash
 claimRef
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+dependentClaimsStart macro
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+!macro!
+\backslash
+dependentClaimsStart
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+patentClaimsEnd macro
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+!macro!
+\backslash
+dependentClaimsEnd
 \end_layout
 
 \end_inset
@@ -14122,7 +14203,12 @@ width "80col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 \begin_inset VSpace defskip
@@ -14136,7 +14222,7 @@ status collapsed
 
 \series bold
 \size tiny
----START OF PATENT CLAIMS---
+—START OF PATENT CLAIMS—
 \end_layout
 
 \begin_layout Plain Layout
@@ -14150,6 +14236,41 @@ AnIndepClaim
 
 \series default
 An Independent Claim.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\series bold
+\size tiny
+—START OF DEPENDENT CLAIMS—
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\series bold
+AnIndepClaim
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+An Independent Claim.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -14190,7 +14311,15 @@ AnIndepClaim
 
 \series bold
 \size tiny
----END OF PATENT CLAIMS---
+—END OF DEPENDENT CLAIMS—
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\series bold
+\size tiny
+—END OF PATENT CLAIMS—
 \end_layout
 
 \begin_layout Plain Layout
@@ -14205,7 +14334,7 @@ AnIndepClaim
 
 \series bold
 \size tiny
---
+–
 \end_layout
 
 \end_inset
@@ -14244,7 +14373,8 @@ ClaimsStart environment
 status collapsed
 
 \begin_layout Plain Layout
-LyX!environment!ClaimsStart
+\SpecialChar LyX
+!environment!ClaimsStart
 \end_layout
 
 \end_inset
@@ -14264,7 +14394,8 @@ ClaimsEnd environment
 status collapsed
 
 \begin_layout Plain Layout
-LyX!environment!ClaimsEnd
+\SpecialChar LyX
+!environment!ClaimsEnd
 \end_layout
 
 \end_inset
@@ -14284,7 +14415,8 @@ Claim environment
 status collapsed
 
 \begin_layout Plain Layout
-LyX!environment!Claim
+\SpecialChar LyX
+!environment!Claim
 \end_layout
 
 \end_inset
@@ -14328,11 +14460,130 @@ What is claimed:
  customized (see 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Claims-customization"
+reference "subsec:Claims-customization"
 
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+Dependent claims can be placed into an indented list with the nested 
+\family typewriter
+
+\backslash
+dependentClaimsStart
+\family default
+ and 
+\family typewriter
+
+\backslash
+dependentClaimsEnd
+\family default
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+dependentClaimsStart macro
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+!macro!
+\backslash
+patentClaimsStart
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+dependentClaimsEnd macro
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+!macro!
+\backslash
+dependentClaimsEnd
+\end_layout
+
+\end_inset
+
+macros in \SpecialChar LaTeX
+ or the 
+\series bold
+DependentClaimsStart
+\series default
+ and 
+\series bold
+DependentClaimsEnd
+\series default
+ 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+DependentClaimsStart environment
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LyX
+!environment!DependentClaimsStart
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+DependentClaimsEnd environment
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LyX
+!environment!DependentClaimsEnd
+\end_layout
+
+\end_inset
+
+environments in \SpecialChar LyX
+.
+ These also take no arguments.
 \end_layout
 
 \begin_layout Standard
@@ -20196,6 +20447,46 @@ begin{enumerate}
 
 \begin_layout Plain Layout
 
+% Tip from: https://latex.org/forum/viewtopic.php?t=5598 
+\backslash
+newcommand{
+\backslash
+dependentClaimsStart}{ 
+\backslash
+addtocounter{enumi}{1} 
+\backslash
+begin{enumerate}[label=
+\backslash
+arabic*.,start=
+\backslash
+value{enumi}] }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+dependentClaimsEnd}{ 
+\backslash
+addtocounter{enumii}{-
+\backslash
+value{enumi}} 
+\backslash
+addtocounter{enumi}{
+\backslash
+value{enumii}} 
+\backslash
+end{enumerate} }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 newcommand{
@@ -23869,7 +24160,7 @@ sectionmark{Appendix B - PatentLayout.tex Listing}
  
 \begin_inset listings
 inline false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align left
@@ -24635,12 +24926,10 @@ patentClaimsStart
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 
 \backslash
@@ -24648,38 +24937,85 @@ beginClaim{Claim1}
 \end_layout
 
 \begin_layout Plain Layout
-\align left
-
-\end_layout
-
-\begin_layout Plain Layout
-\align left
 
 This is an independent claim.
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 
 \backslash
-beginClaim{Claim2}
+dependentClaimsStart
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
-The method of 
+  
+\backslash
+beginClaim{Claim1.1}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  The method of 
+\backslash
+claimRef{Claim1} further comprising
+\backslash
+ldots      
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+beginClaim{Claim1.2}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  The method of 
+\backslash
+claimRef{Claim1} further comprising
+\backslash
+ldots (a very long line of text will wrap correctly to the next line, with
+ an appropirate indentation.)
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+beginClaim{Claim1.3}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  The method of 
 \backslash
 claimRef{Claim1} further comprising
 \backslash
@@ -24687,16 +25023,103 @@ ldots
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 \end_layout
 
 \begin_layout Plain Layout
-\align left
 
 
 \backslash
-patentClaimsEnd
+dependentClaimsEnd
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+beginClaim{Claim2}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+This is an independent claim.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+dependentClaimsStart
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+beginClaim{Claim2.1}
+\end_layout
+
+\begin_layout Plain Layout
+
+  The method of 
+\backslash
+claimRef{Claim2} further comprising
+\backslash
+ldots
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+beginClaim{Claim2.2}
+\end_layout
+
+\begin_layout Plain Layout
+
+  The method of 
+\backslash
+claimRef{Claim2} further comprising
+\backslash
+ldots
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+dependentClaimsEnd
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+patentClaimsEnd 
 \end_layout
 
 \begin_layout Plain Layout
