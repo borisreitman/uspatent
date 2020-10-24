@@ -2522,14 +2522,26 @@ in \LyX{}. These take no arguments.
 \par\end{center}
 
 \texttt{\textbackslash{}patentClaimsStart}
+\vskip 1 em
 
 \texttt{\textbackslash{}beginClaim\{AnIndepClaim\}}
 
+
 \texttt{An Independent claim.}
+
+\vskip 1 em
+
+\texttt{\textbackslash{}dependentClaimsStart}
+
+\vskip 1 em
 
 \texttt{\textbackslash{}beginClaim\{ADepClaim\}}
 
 \texttt{A dependent claim of \textbackslash{}claimRef\{AnIndepClaim\}.}
+
+\vskip 1 em
+\texttt{\textbackslash{}dependentClaimsEnd}
+\vskip 1 em
 
 \texttt{\textbackslash{}patentClaimsEnd}
 
@@ -2585,6 +2597,13 @@ AnIndepClaim
 automatically begin with a statement like: ``What is claimed:''.
 This statement will be printed automatically, but the statement can
 be customized (see \ref{sub:Claims-customization}).
+
+Dependent claims can be placed into an indented list
+with the nested \texttt{\textbackslash{}dependentClaimsStart} and \texttt{\textbackslash{}dependentClaimsEnd}
+\index{dependentClaimsStart macro@\textbackslash{}dependentClaimsStart macro}\index{LaTeX@\LaTeX{}!macro!dependentClaimsStart@\textbackslash{}dependentClaimsStart}\index{dependentClaimsEnd macro@\textbackslash{}dependentClaimsEnd macro}\index{LaTeX@\LaTeX{}!macro!dependentClaimsEnd@\textbackslash{}dependentClaimsEnd}macros
+in \LaTeX{} or the \textbf{DependentClaimsStart} and \textbf{DependentClaimsEnd} \index{DependentClaimsStart environment}\index{LyX@\LyX{}!environment!DependentClaimsStart}\index{DependentClaimsEnd environment}\index{LyX@\LyX{}!environment!DependentClaimsEnd}environments
+in \LyX{}. These also take no arguments.
+
 
 Each claim begins with the \texttt{\textbackslash{}beginClaim} \index{beginClaim macro@\textbackslash{}beginClaim macro}\index{LaTeX@\LaTeX{}!macro!beginClaim@\textbackslash{}beginClaim}macro
 in \LaTeX{} or the \textbf{Claim} \index{Claim environment}\index{LyX@\LyX{}!environment!Claim}environment
