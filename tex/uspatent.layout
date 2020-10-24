@@ -447,6 +447,38 @@ Style	ClaimsEnd
 	EndFont
 End
 
+Style	DependentClaimsStart
+	Category			Claims
+	LatexType			command
+	LatexName			dependentClaimsStart
+	KeepEmpty			1
+	LabelType			Static
+	LabelString		"------- Start of Dependent Subclaims ------"
+	Align				Right
+	Font
+		Series		Bold
+		Shape			SmallCaps
+		Color			Blue
+	  	Size			Tiny
+	EndFont
+End
+
+Style	DependentClaimsEnd
+	Category			Claims
+	LatexType			command
+	LatexName			dependentClaimsEnd
+	KeepEmpty			1
+	LabelType			Static
+	LabelString		"------- End of Dependent Subclaims ------"
+	Align				Right
+	Font
+		Series		Bold
+		Shape			SmallCaps
+		Color			Blue
+	  	Size			Tiny
+	EndFont
+End
+
 InsetLayout "Flex:ClaimReference"
 	LyXType               custom
 	Decoration            classic

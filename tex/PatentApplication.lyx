@@ -540,14 +540,18 @@ Claim1
 This is an independent claim.
 \end_layout
 
+\begin_layout DependentClaimsStart
+
+\end_layout
+
 \begin_layout Claim
-Claim2
+Claim1.1
 \end_layout
 
 \begin_layout Standard
 The method of 
 \begin_inset Flex ClaimReference
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -556,7 +560,108 @@ Claim1
 
 \end_inset
 
- further comprising\SpecialChar \ldots{}
+ further comprising\SpecialChar ldots
+
+\end_layout
+
+\begin_layout Claim
+Claim1.2
+\end_layout
+
+\begin_layout Standard
+The method of 
+\begin_inset Flex ClaimReference
+status collapsed
+
+\begin_layout Plain Layout
+
+Claim1
+\end_layout
+
+\end_inset
+
+ further comprising\SpecialChar ldots
+ (a very long line of text will wrap correctly to the
+ next line, with an appropirate indentation.)
+\end_layout
+
+\begin_layout Claim
+Claim1.3
+\end_layout
+
+\begin_layout Standard
+The method of 
+\begin_inset Flex ClaimReference
+status collapsed
+
+\begin_layout Plain Layout
+
+Claim1
+\end_layout
+
+\end_inset
+
+ further comprising\SpecialChar ldots
+
+\end_layout
+
+\begin_layout DependentClaimsEnd
+
+\end_layout
+
+\begin_layout Claim
+Claim2
+\end_layout
+
+\begin_layout Standard
+This is a second independent claim.
+\end_layout
+
+\begin_layout DependentClaimsStart
+
+\end_layout
+
+\begin_layout Claim
+Claim2.1
+\end_layout
+
+\begin_layout Standard
+The method of 
+\begin_inset Flex ClaimReference
+status collapsed
+
+\begin_layout Plain Layout
+
+Claim2
+\end_layout
+
+\end_inset
+
+ further comprising\SpecialChar ldots
+
+\end_layout
+
+\begin_layout Claim
+Claim2.1
+\end_layout
+
+\begin_layout Standard
+The method of 
+\begin_inset Flex ClaimReference
+status collapsed
+
+\begin_layout Plain Layout
+
+Claim2
+\end_layout
+
+\end_inset
+
+ further comprising\SpecialChar ldots
+
+\end_layout
+
+\begin_layout DependentClaimsEnd
 
 \end_layout
 

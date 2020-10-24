@@ -303,6 +303,18 @@ Title: \MakeUppercase{ \thetitle }
 \begin{enumerate}
 }
 
+% Tip from: https://latex.org/forum/viewtopic.php?t=5598
+\newcommand{\dependentClaimsStart}{
+\addtocounter{enumi}{1}
+\begin{enumerate}[label=\arabic*.,start=\value{enumi}]
+}
+
+\newcommand{\dependentClaimsEnd}{
+\addtocounter{enumii}{-\value{enumi}}
+\addtocounter{enumi}{\value{enumii}}
+\end{enumerate}
+}
+
 \newcommand{\patentClaimsEnd}{
 \end{enumerate}
 \newpage
