@@ -453,7 +453,7 @@ Style	DependentClaimsStart
 	LatexName			dependentClaimsStart
 	KeepEmpty			1
 	LabelType			Static
-	LabelString		"------- Start of Dependent Subclaims ------"
+	LabelString		"------- Start of Dependent Claims ------"
 	Align				Right
 	Font
 		Series		Bold
@@ -469,7 +469,7 @@ Style	DependentClaimsEnd
 	LatexName			dependentClaimsEnd
 	KeepEmpty			1
 	LabelType			Static
-	LabelString		"------- End of Dependent Subclaims ------"
+	LabelString		"------- End of Dependent Claims ------"
 	Align				Right
 	Font
 		Series		Bold
